@@ -139,7 +139,7 @@ public class GenericJackson2JsonRedisSerializer implements RedisSerializer<Objec
 	public <T> T deserialize(@Nullable byte[] source, Class<T> type) throws SerializationException {
 
 		Assert.notNull(type,
-				"Deserialization type must not be null! Pleaes provide Object.class to make use of Jackson2 default typing.");
+				"Deserialization type must not be null! Please provide Object.class to make use of Jackson2 default typing.");
 
 		if (SerializationUtils.isEmpty(source)) {
 			return null;
